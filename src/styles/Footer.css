@@ -1,0 +1,21 @@
+/* Footer.css */
+
+footer {
+    /* Set the height of the footer */
+    height: 50px;
+
+    /* Background color for the footer */
+    background-color: #f5f5f5;
+
+    /* Add a top border to separate footer from content */
+    border-top: 1px solid #ddd;
+
+    /* Use flexbox to center content vertically and horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Set font size and color */
+    font-size: 14px;
+    color: #666;
+}

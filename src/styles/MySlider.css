@@ -1,0 +1,140 @@
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  margin: 1rem auto;
+  padding: 0 2rem;
+}
+
+.slider-item {
+  flex: 0 0 auto;
+  width: calc(16.666% - 14px); /* For 6 items, subtracting gap */
+  padding: 0;
+  margin: 0;
+}
+
+.slick-slide {
+  padding: 0 8px;
+}
+
+.slider-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 47px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border-bottom: 3px solid #0066cc;
+}
+
+.card-title {
+  color: #002e3f;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  font-weight: 550;
+}
+
+.card-value {
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+/* Negative values in red */
+.card-value[data-negative="true"] {
+  color: #ff0000;
+}
+
+/* Arrow Styles */
+.chart-container {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  min-height: 400px;
+}
+
+.charts .slider-container {
+  overflow: visible;
+}
+
+.charts .slider-arrow {
+  z-index: 10;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.charts .slider-arrow:hover {
+  background: #f8f8f8;
+}
+
+.charts .slider-arrow-prev {
+  left: -50px;
+}
+
+.charts .slider-arrow-next {
+  right: -50px;
+}
+
+/* Hide default slick arrows */
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .slider-container {
+    padding: 0 1.5rem;
+  }
+  
+  .slider-card {
+    padding: 0.75rem;
+    min-height: 70px;
+  }
+  
+  .card-title {
+    font-size: 0.8rem;
+  }
+  
+  .card-value {
+    font-size: 1rem;
+  }
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.slider-arrow:hover {
+  opacity: 0.8;
+}
+
+.slider-arrow.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.slider-arrow-next {
+  right: -30px;
+}
+
+.slider-arrow-prev {
+  left: -30px;
+}

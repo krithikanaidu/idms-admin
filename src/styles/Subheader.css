@@ -1,0 +1,52 @@
+.subheader-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically center content */
+  padding: 10px 15px;
+  padding-left: 25px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  height: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 4%;
+  padding-bottom: 10px;
+}
+
+.sub-header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sub-header img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.subheader-tabs {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.subheader-tabs h3 {
+  font-size: 16px;
+  cursor: pointer;
+  color: #444;
+  margin: 0;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.subheader-tabs h3:hover {
+  color: #007bff; /* Optional: Hover color */
+}
+
+.subheader-page-title {
+  flex: 1;
+  align-items: center;
+  text-align: center;
+  padding-right: 350px;
+}
