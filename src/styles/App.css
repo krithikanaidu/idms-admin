@@ -7,31 +7,18 @@ body {
 
 .app-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 100vh;
-}
-
-.sidebar-wrapper {
-  display: flex;
-  flex: 1;
-  overflow: hidden;
-}
-
-.sidebar {
-  width: 240px;
-  overflow-y: auto;
-  background-color: #ffffff;
-  border-right: 1px solid #eee;
+  width: 100%;
 }
 
 .right-panel {
-  padding: initial;
   display: flex;
   flex-direction: column;
   flex: 1;
   overflow: hidden;
+  width: calc(100% - 100px);
 }
-
 
 .content {
   flex: 1;

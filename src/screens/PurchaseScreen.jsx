@@ -11,7 +11,7 @@ import {
   CartesianGrid,
 } from "recharts";
 
-const noteData = [{ title: "Important Message" }];
+const noteData = [{ title: "Note: D – Domestic, I – Imports" }];
 
 const data = [
   { name: "Page A", uv: 400, pv: 2400, amt: 2400 },
@@ -65,7 +65,7 @@ const PurchaseScreen = () => {
             {
               id: 1,
               content: (
-                <div className="chart-container">
+                <div className="chart-container ">
                   <p className="pb-4 text-center">chart 1</p>
                   <ResponsiveContainer width="100%" height={300}>
                     <BarChart data={data}>

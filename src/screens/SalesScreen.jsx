@@ -18,8 +18,6 @@ const data = [
   { name: "Page E", uv: 199, pv: 2400, amt: 2400 },
 ];
 
-const noteData = [{ title: "Important Message" }];
-
 const salesData = [
   { id: 1, title: "Debit Note MTD [D]*", value: "0.00 Lakh" },
   { id: 2, title: "Debit Note YTD[S]*", value: "0.00 Lakh" },
@@ -117,33 +115,6 @@ const SalesScreen = () => {
           prevArrowColor="pink"
         />
       </div>
-      {/* <div className="flex gap-6 justify-center">
-        <div className="bg-white p-8 pb-3 rounded-lg shadow-md w-full max-w-md flex flex-col items-center">
-          <p className="pb-4 text-center">Monthly Domestic Purchase Value</p>
-          <ResponsiveContainer width="100%" aspect={2}>
-            <BarChart data={data}>
-              <XAxis dataKey="name" stroke="#8884d8" />
-              <YAxis />
-              <Tooltip />
-              <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-              <Bar dataKey="uv" fill="#000000" barSize={20} />
-            </BarChart>
-          </ResponsiveContainer>
-        </div>
-
-        <div className="bg-white p-8 pb-3 rounded-lg shadow-md w-full max-w-md flex flex-col items-center">
-          <p className="pb-4 text-center">Monthly Domestic Purchase Value</p>
-          <ResponsiveContainer width="100%" aspect={2}>
-            <BarChart data={data}>
-              <XAxis dataKey="name" stroke="#8884d8" />
-              <YAxis />
-              <Tooltip />
-              <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-              <Bar dataKey="uv" fill="#000000" barSize={20} />
-            </BarChart>
-          </ResponsiveContainer>
-        </div>
-      </div> */}
     </div>
   );
 };
