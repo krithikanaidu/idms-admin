@@ -9,7 +9,7 @@ function SampleNextArrow({ className, style, onClick, currentSlide, slideCount }
   const isDisabled = currentSlide === slideCount - 1;
   return (
     <button
-      className={`slider-arrow slider-arrow-next ${className} ${isDisabled ? 'disabled' : ''}`}
+      className={`slider-arrow slider-arrow-next ${className}`}
       style={{ ...style }}
       onClick={onClick}
       // disabled={isDisabled}
@@ -25,12 +25,12 @@ function SamplePrevArrow({ className, style, onClick, currentSlide }) {
   const isDisabled = currentSlide === 0;
   return (
     <button
-      className={`slider-arrow slider-arrow-prev ${className} ${isDisabled ? 'disabled' : ''}`}
+      className={`slider-arrow slider-arrow-prev ${className}`}
       style={{ ...style }}
       onClick={onClick}
-      disabled={isDisabled}
+      // disabled={isDisabled}
       aria-label="Previous slide"
-      aria-disabled={isDisabled}
+      // aria-disabled={isDisabled}
     >
       <FiChevronLeft size={24} color="#FF1493" />
     </button>

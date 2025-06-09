@@ -46,14 +46,6 @@ const SalesScreen = () => {
           prevArrowColor="pink"
         />
       </div>
-      <div className="importantNote">
-        <MySlider
-          data={noteData}
-          slidesToShow={Math.min(data.length, 1)}
-          slidesToScroll={1}
-          arrows={false}
-        />
-      </div>
       <div
         className="charts"
         style={{ padding: "0 1px", position: "relative" }}
@@ -119,7 +111,7 @@ const SalesScreen = () => {
             },
           ]}
           slidesToShow={2}
-          slidesToScroll={1}
+          slidesToScroll={2 }
           arrows={true}
           nextArrowColor="pink"
           prevArrowColor="pink"

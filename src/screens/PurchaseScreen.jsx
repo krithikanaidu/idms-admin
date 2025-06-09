@@ -11,6 +11,8 @@ import {
   CartesianGrid,
 } from "recharts";
 
+const noteData = [{ title: "Important Message" }];
+
 const data = [
   { name: "Page A", uv: 400, pv: 2400, amt: 2400 },
   { name: "Page B", uv: 299, pv: 2400, amt: 2400 },
@@ -46,33 +48,78 @@ const PurchaseScreen = () => {
           prevArrowColor="pink"
         />
       </div>
-
-      <div className="flex gap-6 justify-center">
-        <div className="bg-white p-8 pb-3 rounded-lg shadow-md w-full max-w-md flex flex-col items-center">
-          <p className="pb-4 text-center">Monthly Domestic Purchase Value</p>
-          <ResponsiveContainer width="100%" aspect={2}>
-            <BarChart data={data}>
-              <XAxis dataKey="name" stroke="#8884d8" />
-              <YAxis />
-              <Tooltip />
-              <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-              <Bar dataKey="uv" fill="#000000" barSize={20} />
-            </BarChart>
-          </ResponsiveContainer>
-        </div>
-
-        <div className="bg-white p-8 pb-3 rounded-lg shadow-md w-full max-w-md flex flex-col items-center">
-          <p className="pb-4 text-center">Monthly Domestic Purchase Value</p>
-          <ResponsiveContainer width="100%" aspect={2}>
-            <BarChart data={data}>
-              <XAxis dataKey="name" stroke="#8884d8" />
-              <YAxis />
-              <Tooltip />
-              <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-              <Bar dataKey="uv" fill="#000000" barSize={20} />
-            </BarChart>
-          </ResponsiveContainer>
-        </div>
+      <div className="importantNote">
+        <MySlider
+          data={noteData}
+          slidesToShow={Math.min(data.length, 1)}
+          slidesToScroll={1}
+          arrows={false}
+        />
+      </div>
+      <div
+        className="charts"
+        style={{ padding: "0 1px", position: "relative" }}
+      >
+        <MySlider
+          data={[
+            {
+              id: 1,
+              content: (
+                <div className="chart-container">
+                  <p className="pb-4 text-center">chart 1</p>
+                  <ResponsiveContainer width="100%" height={300}>
+                    <BarChart data={data}>
+                      <XAxis dataKey="name" stroke="#8884d8" />
+                      <YAxis />
+                      <Tooltip />
+                      <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+                      <Bar dataKey="uv" fill="#000000" barSize={20} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </div>
+              ),
+            },
+            {
+              id: 2,
+              content: (
+                <div className="chart-container">
+                  <p className="pb-4 text-center">chart 2</p>
+                  <ResponsiveContainer width="100%" height={300}>
+                    <BarChart data={data}>
+                      <XAxis dataKey="name" stroke="#8884d8" />
+                      <YAxis />
+                      <Tooltip />
+                      <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+                      <Bar dataKey="uv" fill="#000000" barSize={20} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </div>
+              ),
+            },
+            {
+              id: 3,
+              content: (
+                <div className="chart-container">
+                  <p className="pb-4 text-center">chart 3</p>
+                  <ResponsiveContainer width="100%" height={300}>
+                    <BarChart data={data}>
+                      <XAxis dataKey="name" stroke="#8884d8" />
+                      <YAxis />
+                      <Tooltip />
+                      <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+                      <Bar dataKey="uv" fill="#000000" barSize={20} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </div>
+              ),
+            },
+          ]}
+          slidesToShow={2}
+          slidesToScroll={2}
+          arrows={true}
+          nextArrowColor="pink"
+          prevArrowColor="pink"
+        />
       </div>
     </div>
   );
