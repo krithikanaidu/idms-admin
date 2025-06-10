@@ -1,7 +1,7 @@
 .slider-container {
   position: relative;
   max-width: 100%;
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   padding: 0 2rem;
 }
 
@@ -18,26 +18,51 @@
 .slider-card {
   background: #ffffff;
   border-radius: 8px;
-  padding: 1rem;
+  padding: 9px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  min-height: 42px;
+  min-height: 45px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-  border-bottom: 3px solid #0066cc;
+  border-bottom: 4px solid #007DAF;
+  height: auto;
+}
+
+/* Regular card styles */
+.slider-card:not(.chart-card) {
+  min-height: 45px;
+  max-height: none;
+}
+
+/* Chart card styles */
+.slider-card.chart-card {
+  min-height: 300px;
+  height: auto;
 }
 
 .card-title {
   color: #002e3f;
+  font-size: 15px;
+  margin-bottom: 0.3rem;
+  margin-left: 1px;
+  /* word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: break-word; */
+}
+
+.card-content {
+  color: #333;
   font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-  font-weight: 550;
+  font-weight: lighter;
+  /* word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: break-word; */
 }
 
 .card-value {
   color: #333;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: lighter;
 }
 
@@ -48,39 +73,21 @@
 
 /* Arrow Styles */
 .chart-container {
-  padding: 20px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 10px;
-  min-height: 400px;
+  padding: 2px;
+  margin-right: 5px;
+  padding-bottom: 10px;
 }
 
 .charts .slider-container {
   overflow: visible;
 }
 
-.charts .slider-arrow {
-  z-index: 10;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 1;
-}
-
-.charts .slider-arrow:hover {
-  background: #f8f8f8;
-}
-
 .charts .slider-arrow-prev {
-  left: -50px;
+  left: -30px;
 }
 
 .charts .slider-arrow-next {
-  right: -50px;
+  right: -30px;
 }
 
 /* Hide default slick arrows */
@@ -90,7 +97,7 @@
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .slider-container {
     padding: 0 1.5rem;
   }
@@ -107,7 +114,7 @@
   .card-value {
     font-size: 1rem;
   }
-}
+} */
 
 .slider-arrow {
   position: absolute;

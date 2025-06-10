@@ -12,8 +12,6 @@ const BusinessLeads = () => {
       }}>
         <p>Welcome to the Business Leads dashboard.</p>
       </div>
-      <h1 className="text-red-500 text-2xl">Tailwind test</h1>
-
     </div>
   )
 }

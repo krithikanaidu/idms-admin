@@ -12,9 +12,7 @@ function SampleNextArrow({ className, style, onClick, currentSlide, slideCount }
       className={`slider-arrow slider-arrow-next ${className}`}
       style={{ ...style }}
       onClick={onClick}
-      // disabled={isDisabled}
       aria-label="Next slide"
-      // aria-disabled={isDisabled}
     >
       <FiChevronRight size={24} color="#FF1493" />
     </button>
@@ -28,9 +26,7 @@ function SamplePrevArrow({ className, style, onClick, currentSlide }) {
       className={`slider-arrow slider-arrow-prev ${className}`}
       style={{ ...style }}
       onClick={onClick}
-      // disabled={isDisabled}
       aria-label="Previous slide"
-      // aria-disabled={isDisabled}
     >
       <FiChevronLeft size={24} color="#FF1493" />
     </button>
@@ -42,6 +38,7 @@ export default function MySlider({
   slidesToShow,
   slidesToScroll,
   arrows = true,
+  isChart = false,
 }) {
   const settings = {
     dots: false,
@@ -90,7 +87,7 @@ export default function MySlider({
       <Slider {...settings}>
         {data.map((item) => (
           <div key={item.id} className="slider-item">
-            <div className="slider-card">
+            <div className={`slider-card ${isChart ? 'chart-card' : ''}`}>
               {item.content ? (
                 <>
                   <div className="card-title">{item.title}</div>

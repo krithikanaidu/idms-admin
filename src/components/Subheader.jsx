@@ -5,18 +5,18 @@ import previous from '../assets/icons/icon_previous.svg';
 import '../styles/Subheader.css';
 
 const routeTitles = {
-  "/business-leads": "Business Leads",
-  "/sales": "Sales",
-  "/planning": "Planning",
-  "/purchase": "Purchase",
-  "/stores": "Stores",
-  "/production": "Production",
-  "/maintenance": "Maintenance",
-  "/quality": "Quality",
-  "/hrm": "HRM",
-  "/dispatch": "Dispatch",
-  "/settings": "Settings",
-  "/support": "Support",
+  "/business-leads": "Business Leads Overview",
+  "/sales": "Sales Overview",
+  "/planning": "Planning Overview",
+  "/purchase": "Purchase Overview",
+  "/stores": "Stores Overview",
+  "/production": "Production Overview",
+  "/maintenance": "Maintenance Overview",
+  "/quality": "Quality Overview",
+  "/hrm": "HRM Overview",
+  "/dispatch": "Dispatch Overview",
+  "/settings": "Settings Overview",
+  "/support": "Support Overview",
 };
 
 export default function SubHeader() {
@@ -26,7 +26,7 @@ export default function SubHeader() {
   return (
     <div className="subheader-container">
       <div className="sub-header">
-        <img src={home} alt="home" />
+        <img src={home} alt="home" className='cursor-pointer'/>
         <img src={redStroke} alt="stroke" />
         <img src={previous} alt="previous" />
         <img src={redStroke} alt="stroke" />

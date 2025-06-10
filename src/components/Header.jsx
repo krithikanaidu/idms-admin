@@ -1,9 +1,16 @@
 import React from "react";
 import "../styles/Header.css";
 import logo from "../assets/logo.svg"; // Assuming you have a logo image in this path
+import { useNavigate } from "react-router-dom";
 import { FiPower } from "react-icons/fi";
 
-const Header = () => {
+const Header = ({ setIsLoggedIn }) => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    setIsLoggedIn(false); // resets login
+    navigate("/"); // redirects to LoginScreen
+  };
   return (
     <header className="header">
       <div className="navbar">
@@ -12,7 +19,7 @@ const Header = () => {
         </div>
         <div className="navbar-right">
           <span className="navbar-user">Welcome - Functional Support</span>
-          <button className="logout-button">
+          <button className="logout-button" onClick={handleLogout}>
             <FiPower className="icon" size={17} />
             Logout
           </button>

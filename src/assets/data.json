@@ -1,0 +1,114 @@
+{
+  "notePurchase": [{ "title": "Note: D – Domestic, I – Imports" }],
+  "noteSales": [{ "title": "Note: D – Domestic" }],
+  "monthlyPerformance": [
+    { "id": 1, "month": "Apr", "value": 2 },
+    { "id": 2, "month": "May", "value": null},
+    { "id": 3, "month": "Jun", "value": 2 },
+    { "id": 4, "month": "Jul", "value": 4 },
+    { "id": 5, "month": "Aug", "value": 3 },
+    { "id": 6, "month": "Sep", "value": 4 },
+    { "id": 7, "month": "Nov", "value": 6 },
+    { "id": 8, "month": "Dec", "value": null },
+    { "id": 9, "month": "Jan", "value": null },
+    { "id": 10, "month": "Feb", "value": null },
+    { "id": 11, "month": "Mar", "value": null },
+    { "id": 12, "month": "Apr", "value": null }
+  ],
+  "monthlyValues": [
+    { "id": 1, "month": "Apr", "value": 46.68 },
+    { "id": 2, "month": "May", "value": 0.03 },
+    { "id": 3, "month": "Jun", "value": null },
+    { "id": 4, "month": "Jul", "value": null },
+    { "id": 5, "month": "Aug", "value": null },
+    { "id": 6, "month": "Sep", "value": null },
+    { "id": 7, "month": "Nov", "value": null },
+    { "id": 8, "month": "Dec", "value": null },
+    { "id": 9, "month": "Jan", "value": null },
+    { "id": 10, "month": "Feb", "value": null },
+    { "id": 11, "month": "Mar", "value": null },
+    { "id": 12, "month": "Apr", "value": null }
+  ],
+  "purchaseMetrics": [
+    { "id": 1, "title": "Debit Note MTD [D]*", "value": "0.00 Lakh" },
+    { "id": 2, "title": "Debit Note YTD[S]*", "value": "0.00 Lakh" },
+    { "id": 3, "title": "Suppliers", "value": "31" },
+    { "id": 4, "title": "Suppliers [I]*", "value": "0" },
+    { "id": 5, "title": "Items", "value": "97" },
+    { "id": 6, "title": "PPV Ratio", "value": "-0.55 %" },
+    { "id": 7, "title": "MTD Purchase [D]*", "value": "0.00 Lakh" },
+    { "id": 8, "title": "YTD Purchase [D]*", "value": "46.71 Lakh" },
+    { "id": 9, "title": "MTD Purchase [I]*", "value": "0.00 Lakh" },
+    { "id": 10, "title": "YTD Purchase [I]*", "value": "0.00 Lakh" },
+    { "id": 11, "title": "PPV Value", "value": "0.11 Lakh" }
+  ],
+  "supplierSpends": [
+    { "id": 1, "title": "Pack Print Industries(1) Pvt Ltd", "value": 29.43 },
+    { "id": 2, "title": "Sun Packaging", "value": 7.87 },
+    { "id": 3, "title": "M M Corporation", "value": 2.07 },
+    { "id": 4, "title": "Salunkhe Paper Products", "value": 1.59 },
+    { "id": 5, "title": "Astra Chemtech Pvt. Ltd.", "value": 1.25 }
+  ],
+  "domesticItemsSpends": [
+    { "id": 1, "title": "TR VL/LDPE(P2736C)", "value": 11.11 },
+    { "id": 2, "title": "TR BL/LDPE(P2736C)", "value": 5.59 },
+    { "id": 3, "title": "OP-WH/LDPE", "value": 3.93 },
+    { "id": 4, "title": "TR/LDPE", "value": 2.36 },
+    { "id": 5, "title": "TR BL/LDPE(P2736C)", "value": 2.19 }
+  ],
+
+  "salesMetrics": [
+    { "id": 1, "title": "YTD Net Sale[D]*", "value": "0.20 Lakh" },
+    { "id": 2, "title": "DMTD Net Sale[D]*", "value": "0.00 Lakh" },
+    { "id": 3, "title": "YTD Tax Invoice [D]*", "value": "0.20 Lakh" },
+    { "id": 4, "title": "MTD Tax Invoice [D]*", "value": "0.0 Lakh" },
+    { "id": 5, "title": "YTD Service Invoice [D]*", "value": "0.0 Lakh" },
+    { "id": 6, "title": "MTD Service Invoice [D]*", "value": "0.00 Lakh" },
+    { "id": 7, "title": "AVG Monthly Net Sale [D]*", "value": "0.09 Lakh" },
+    { "id": 8, "title": "YTD SO Value[D]*", "value": "1.42 Lakh" },
+    { "id": 9, "title": "MTD SO Value[D]*", "value": "0.29 Lakh" },
+    { "id": 10, "title": "SO Bal Value [D]*", "value": "0.11 Lakh" },
+    { "id": 11, "title": "YTD Service Invoice [D]*", "value": "-0.55 %" },
+    { "id": 11, "title": "MTD Service Invoice [D]*", "value": "-0.55 %" }
+  ],
+
+  "monthlyDomesticSOTrends": [
+    { "id": 1, "month": "Apr", "value": 0.49 },
+    { "id": 2, "month": "May", "value": 0.65 },
+    { "id": 3, "month": "Jun", "value": 0.29 },
+    { "id": 4, "month": "Jul", "value": null },
+    { "id": 5, "month": "Aug", "value": null },
+    { "id": 6, "month": "Sep", "value": null },
+    { "id": 7, "month": "Nov", "value": null },
+    { "id": 8, "month": "Dec", "value": null },
+    { "id": 9, "month": "Jan", "value": null },
+    { "id": 10, "month": "Feb", "value": null },
+    { "id": 11, "month": "Mar", "value": null },
+    { "id": 12, "month": "Apr", "value": null }
+  ],
+
+  "monthlyTaxInvoice": [
+    { "id": 1, "month": "Apr", "value": 0.05 },
+    { "id": 2, "month": "May", "value": 0.14 },
+    { "id": 3, "month": "Jun", "value": null },
+    { "id": 4, "month": "Jul", "value": null },
+    { "id": 5, "month": "Aug", "value": null },
+    { "id": 6, "month": "Sep", "value": null },
+    { "id": 7, "month": "Nov", "value": null },
+    { "id": 8, "month": "Dec", "value": null },
+    { "id": 9, "month": "Jan", "value": null },
+    { "id": 10, "month": "Feb", "value": null },
+    { "id": 11, "month": "Mar", "value": null },
+    { "id": 12, "month": "Apr", "value": null }
+  ],
+
+  "domesticCustomersOrders": [
+    { "id": 1, "title": "Simta Clear Coats Pvt Ltd", "value": 0.37 },
+    { "id": 2, "title": "ABG Engineering", "value": 0.35 },
+    { "id": 3, "title": "Kassa Doors And Buildpro Pvt Ltd", "value": 0.30 },
+    { "id": 4, "title": "Weatherseal Fenestration Pvt Ltd", "value": 0.14 },
+    { "id": 5, "title": "Hindalco Industries Limited (SAPA)", "value": 0.14 }
+  ],
+
+  "domesticOrderedSKU": []
+}

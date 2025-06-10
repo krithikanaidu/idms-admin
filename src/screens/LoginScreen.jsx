@@ -1,32 +1,75 @@
-import React from 'react'
-import '../styles/LoginScreen.css'; // Assuming you have a CSS file for styles
-import logo from '../assets/logo.svg'
+import React, { useState } from "react";
+import "../styles/LoginScreen.css";
+import logo from "../assets/logo.svg";
 
-const LoginScreen = () => {
+const LoginScreen = ({ onLogin }) => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (username === "idms1" && password === "260104") {
+      onLogin(); // Call the function passed from App
+    } else {
+      setError("Invalid username or password");
+    }
+  };
+
   return (
     <div className="login-bg">
-        <div className="login-card">
-            <div className="login-left">
-                <img src={logo} alt="logo" className='login-logo' />
-            </div>
-            <div className="login-right">
-                <h2 className="login-title">Welcome to IDMS Infotech</h2>
-                <h2 className="login-subtitle">Integrated Digital Management System</h2>
-                <form className="login-form">
-                    <label htmlFor="username">
-                        Username <span className='required'>*</span></label>
-                    <input type="text" id="username" name="username" placeholder='Enter your ID' />
-                    <label htmlFor="password">Password <span className='required'>*</span></label>
-                    <input type="password" id="password" name="password" placeholder='Enter your password' />
-                    <button type="submit" className="login-btn">Login</button>
-                </form>
-                <div className="login-footer">
-                    <p>Forgot your password? <a href="/">Reset Password</a></p> 
-                </div>
-            </div>
+      <div className="login-card">
+        <div className="login-left">
+          <img src={logo} alt="logo" className="login-logo" />
         </div>
+        <div className="login-right">
+          <h2 className="login-title">Welcome to IDMS Infotech</h2>
+          <h2 className="login-subtitle">
+            Integrated Digital Management System
+          </h2>
+          <form className="login-form" onSubmit={handleSubmit}>
+            <div>
+              <label htmlFor="username">
+                Username <span className="required">*</span>
+              </label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter your ID"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="password">
+                Password <span className="required">*</span>
+              </label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+            </div>
+            {error && <p className="error-message text-red-500">{error}</p>}
+            <button type="submit" className="login-btn">
+              Login
+            </button>
+          </form>
+          <div className="login-footer">
+            <p>
+              Forgot your password? <a href="/">Reset Password</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default LoginScreen
+export default LoginScreen;
