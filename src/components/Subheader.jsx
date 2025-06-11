@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import home from '../assets/icons/Icon_home.svg';
 import redStroke from '../assets/icons/redstroke.svg';
 import previous from '../assets/icons/icon_previous.svg';
@@ -21,23 +21,33 @@ const routeTitles = {
 
 export default function SubHeader() {
   const location = useLocation();
+  const navigate = useNavigate();
   const pageTitle = routeTitles[location.pathname] || "Dashboard";
+
+  const handleHomeClick = () => {
+    // Force remount by navigating to the same route again
+    navigate(location.pathname, { replace: true });
+  };
 
   return (
     <div className="subheader-container">
       <div className="sub-header">
-        <img src={home} alt="home" className='cursor-pointer'/>
+        <img
+          src={home}
+          alt="home"
+          className="cursor-pointer"
+          onClick={handleHomeClick}
+        />
         <img src={redStroke} alt="stroke" />
         <img src={previous} alt="previous" />
         <img src={redStroke} alt="stroke" />
         <div className="subheader-tabs">
-        <h3>Masters</h3>
-        <h3>Transactions</h3>
-        <h3>Reports</h3>
-
+          <h3>Masters</h3>
+          <h3>Transactions</h3>
+          <h3>Reports</h3>
+        </div>
       </div>
-      </div>
-         <h2 className='subheader-page-title'>{pageTitle}</h2>
+      <h2 className="subheader-page-title">{pageTitle}</h2>
     </div>
   );
 }

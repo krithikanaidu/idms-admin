@@ -110,5 +110,7 @@
     { "id": 5, "title": "Hindalco Industries Limited (SAPA)", "value": 0.14 }
   ],
 
-  "domesticOrderedSKU": []
+  "domesticOrderedSKU": [
+    {"id" : 1, "title": "TR/40", "value": 0.42}
+  ]
 }

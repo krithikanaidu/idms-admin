@@ -182,7 +182,7 @@ const SalesScreen = () => {
               id: 3,
               content: (
                 <div className="chart-container">
-                  <p className="pb-4 text-center">chart 3</p>
+                  <p className="pb-4 text-center">Top 5 Domestic Customers Orders [In Lakh]</p>
                   <ResponsiveContainer width="100%" height={300}>
                     <BarChart
                       data={data.domesticCustomersOrders}
@@ -204,8 +204,8 @@ const SalesScreen = () => {
                         height={60}
                       />
                       <YAxis
-                        domain={[0, 'dataMax + 5']}
-                        ticks={[0, 5, 10, 15, 20, 25, 30]}
+                        domain={[0, 'dataMax + 0.1']}
+                        ticks={[0, 0.1, 0.2, 0.3, 0.4]}
                         interval={0}
                       />
 
@@ -237,7 +237,7 @@ const SalesScreen = () => {
               id: 4,
               content: (
                 <div className="chart-container">
-                  <p className="pb-4 text-center">chart 3</p>
+                  <p className="pb-4 text-center">Top 5 Domestic Ordered SKUs [In Lakh]</p>
                   <ResponsiveContainer width="100%" height={300}>
                     <BarChart
                       data={data.domesticOrderedSKU}
@@ -259,8 +259,8 @@ const SalesScreen = () => {
                         height={60}
                       />
                       <YAxis
-                        domain={[0, "dataMax + 5"]}
-                        ticks={[0, 5, 10, 15, 20, 25, 30]}
+                        domain={[0, "dataMax + 0.15"]}
+                        ticks={[0, 0.15, 0.30, 0.45]}
                         interval={0}
                       />
 
