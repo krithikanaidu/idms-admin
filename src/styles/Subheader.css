@@ -5,7 +5,7 @@
   padding: 10px 15px;
   padding-left: 25px;
   background-color: #fff;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e6dcdc;
   height: 50px;
   width: 100%;
   box-sizing: border-box;
@@ -41,7 +41,7 @@
 }
 
 .subheader-tabs h3:hover {
-  color: #007bff; /* Optional: Hover color */
+  color: #e6007a; /* Optional: Hover color */
 }
 
 .subheader-page-title {

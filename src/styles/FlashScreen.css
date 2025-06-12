@@ -18,13 +18,18 @@
   width: 120px;
   height: 120px;
   margin-bottom: 30px;
-  animation: flash-pop 1.2s cubic-bezier(.68,-0.55,.27,1.55) both;
+  animation: flash-pop-slow 1.5s ease-out both;
 }
 
-@keyframes flash-pop {
-  0% { transform: scale(0.7); opacity: 0; }
-  60% { transform: scale(1.1); opacity: 1; }
-  100% { transform: scale(1); }
+@keyframes flash-pop-slow {
+  0% {
+    transform: scale(0.7) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2.7) rotate(180deg); /* adjust rotation as needed */
+    opacity: 1;
+  }
 }
 
 /* .flash-loader {

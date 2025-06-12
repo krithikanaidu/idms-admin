@@ -17,6 +17,8 @@ const routeTitles = {
   "/dispatch": "Dispatch Overview",
   "/settings": "Settings Overview",
   "/support": "Support Overview",
+  "/accounts": "Accounts Overview",
+  "/finance": "Finance Overview",
 };
 
 export default function SubHeader() {

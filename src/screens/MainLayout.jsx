@@ -29,9 +29,9 @@ export default function MainLayout({ setIsLoggedIn }) {
           <Subheader />
           <div className="content">
             <Routes>
-              <Route path="/" element={<Navigate to="/business-leads" replace />} />
-              <Route path="/business-leads" element={<BusinessLeads key={location.key} />} />
+              <Route path="/" element={<Navigate to="/sales" replace />} />
               <Route path="/sales" element={<SalesScreen key={location.key} />} />
+              <Route path="/business-leads" element={<BusinessLeads key={location.key} />} />
               <Route path="/planning" element={<PlanningScreen key={location.key} />} />
               <Route path="/purchase" element={<PurchaseScreen key={location.key} />} />
               <Route path="/stores" element={<StoresScreen key={location.key} />} />

@@ -17,16 +17,16 @@ import financeLogo from "../assets/navbarIcons/finance.svg";
 
 const navItems = [
   {
-    icons: businessleadsLogo,
-    label: "Business Leads",
-    path: "/business-leads",
+    icons: salesLogo,
+    label: "Sales",
+    path: "/sales",
     color: "#1a8cff",
     isImage: true,
   },
   {
-    icons: salesLogo,
-    label: "Sales",
-    path: "/sales",
+    icons: businessleadsLogo,
+    label: "Business Leads",
+    path: "/business-leads",
     color: "#1a8cff",
     isImage: true,
   },

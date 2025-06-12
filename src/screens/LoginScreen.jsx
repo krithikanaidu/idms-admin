@@ -1,23 +1,40 @@
 import React, { useState } from "react";
 import "../styles/LoginScreen.css";
 import logo from "../assets/logo.svg";
+import { useNavigate } from "react-router-dom";
+import { DotLoader } from "react-spinners";
 
 const LoginScreen = ({ onLogin }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (username === "idms1" && password === "260104") {
-      onLogin(); // Call the function passed from App
+      setLoading(true);
+
+      // Simulate a login delay
+      setTimeout(() => {
+        setLoading(false);
+        onLogin(); // Optional: only if needed by parent
+        navigate("/sales"); // Navigate after delay
+      }, 1500);
     } else {
       setError("Invalid username or password");
     }
   };
 
-  return (
-    <div className="login-bg">
+  return loading ? (
+    <div className="loader-wrapper">
+      <DotLoader color= "#ff33a6" size={100} />
+    </div>
+  ) : (
+    <div className="login-bg fade">
       <div className="login-card">
         <div className="login-left">
           <img src={logo} alt="logo" className="login-logo" />

@@ -12,7 +12,7 @@
   align-items: center;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e6dcdc;
 }
 
 .navbar {
@@ -50,8 +50,8 @@
 }
 
 .navbar-button {
-  background: #ff33a6;
-  color: #fff;
+  background: #ff33a6;       /* Bright pink background */
+  color: white;              /* White text to contrast */
   border: none;
   border-radius: 4px;
   padding: 8px 18px;
@@ -59,11 +59,11 @@
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s;
-  box-shadow: 0 1px 4px rgba(255,51,166,0.08);
+  box-shadow: 0 1px 4px rgba(255, 51, 166, 0.2); /* Soft shadow */
 }
 
 .navbar-button:hover {
-  background: #e6007a;
+  background: #e6007a;       /* Slightly darker pink on hover */
 }
 
 .navbar-link {
@@ -99,4 +99,6 @@
 .logout-button .icon {
   margin-right: 0.5rem; /* mr-2 */
 }
+
+
 

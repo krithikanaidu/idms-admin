@@ -1,10 +1,9 @@
-// App.jsx
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import FlashScreen from "./screens/FlashScreen";
 import LoginScreen from "./screens/LoginScreen";
-import MainLayout from "./screens/MainLayout"; // Import the layout component
+import MainLayout from "./screens/MainLayout";
 import "./styles/App.css";
 
 const App = () => {
@@ -16,17 +15,15 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  if (showFlash) {
-    return <FlashScreen />;
-  }
-
-  if (!isLoggedIn) {
-    return <LoginScreen onLogin={() => setIsLoggedIn(true)} />;
-  }
-
   return (
     <Router>
-      <MainLayout setIsLoggedIn={setIsLoggedIn} />
+      {showFlash ? (
+        <FlashScreen />
+      ) : !isLoggedIn ? (
+        <LoginScreen onLogin={() => setIsLoggedIn(true)} />
+      ) : (
+        <MainLayout setIsLoggedIn={setIsLoggedIn} />
+      )}
     </Router>
   );
 };
