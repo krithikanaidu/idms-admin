@@ -11,7 +11,6 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import MySlider from "../components/MySlider";
-import "../styles/PurchaseScreen.css";
 
 const getIntroOfPage = (label) => {
   if (label === "Apr") {

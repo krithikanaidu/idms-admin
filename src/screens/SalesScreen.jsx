@@ -43,7 +43,7 @@ const CustomTooltip = ({ active, payload, label }) => {
 const SalesScreen = () => {
   return (
     <div style={{ padding: "16px" }}>
-      <div className="SalesSlider">
+      <div className="SalesSlider text-center">
         <MySlider
           data={data.salesMetrics}
           slidesToShow={5}
@@ -101,7 +101,7 @@ const SalesScreen = () => {
                       {/* <Legend /> */}
                       <Bar
                         dataKey="value"
-                        barSize={15}
+                        barSize={20}
                         fill="#007DAF"
                         label={({ x, y, width, value }) => (
                           <text
@@ -158,7 +158,7 @@ const SalesScreen = () => {
                       {/* <Legend /> */}
                       <Bar
                         dataKey="value"
-                        barSize={15}
+                        barSize={20}
                         fill="#007DAF"
                         label={({ x, y, width, value }) => (
                           <text
@@ -213,7 +213,7 @@ const SalesScreen = () => {
                       {/* <Legend /> */}
                       <Bar
                         dataKey="value"
-                        barSize={15}
+                        barSize={20}
                         fill="#007DAF"
                         label={({ x, y, width, value }) => (
                           <text
@@ -268,7 +268,7 @@ const SalesScreen = () => {
                       {/* <Legend /> */}
                       <Bar
                         dataKey="value"
-                        barSize={15}
+                        barSize={20}
                         fill="#007DAF"
                         label={({ x, y, width, value }) => (
                           <text

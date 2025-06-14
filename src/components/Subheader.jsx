@@ -31,6 +31,12 @@ export default function SubHeader() {
     navigate(location.pathname, { replace: true });
   };
 
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+    const currentPath = location.pathname.split("/")[1];
+    navigate(`/${currentPath}/${tab.toLowerCase()}`);
+  };
+
   return (
     <div className="subheader-container">
       <div className="sub-header">
