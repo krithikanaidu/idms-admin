@@ -27,6 +27,7 @@
   position: relative;
   border-bottom: 4px solid #007DAF;
   height: auto;
+  width: auto;
 }
 
 
@@ -43,7 +44,7 @@
 }
 
 .card-title {
-  color: #002e3f;
+  color: #007DAF;
   font-size: 15px;
   margin-bottom: 0.3rem;
   margin-left: 1px;
@@ -53,7 +54,7 @@
 }
 
 .card-content {
-  color: #333;
+  color: #007DAF;
   font-size: 0.9rem;
   font-weight: lighter;
   /* word-wrap: break-word;
@@ -62,7 +63,7 @@
 }
 
 .card-value {
-  color: #333;
+  color: #007DAF;
   font-size: 0.9rem;
   font-weight: lighter;
 }

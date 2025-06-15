@@ -112,5 +112,22 @@
 
   "domesticOrderedSKU": [
     {"id" : 1, "title": "TR/40", "value": 0.42}
+  ],
+
+    "hrmMetrics": [
+    { "id": 1, "title": "Active Employees", "value": 31 },
+    { "id": 2, "title": "Male Employees", "value": 23 },
+    { "id": 3, "title": "Female Employees", "value": 8 },
+    { "id": 4, "title": "Availed Leaves", "value": 0 },
+    { "id": 5, "title": "Total Paid Holidays", "value": 0 },
+    { "id": 6, "title": "Total Paid Salary", "value": "0.0" }
+  ],
+
+    "monthlyEmployeesNetPaidSalary": [
+  
+  ],
+
+    "monthlyEmployeeLeaves": [
+
   ]
 }

@@ -1,7 +1,7 @@
 .sidebar {
-  width: 100px;
+  width: 200px;
   background: #fff;
-  border-right: 1px solid #6e6c6c;
+  border-right: 1px solid #e5e2e2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +34,7 @@
 }
 
 .sidebar-wrapper {
-  width: 80px;
+  width: 20px;
   display: flex;
   flex: 1;
   overflow: hidden;

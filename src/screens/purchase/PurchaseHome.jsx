@@ -1,6 +1,6 @@
 import React from "react";
 
-import data from "../assets/data.json"
+import data from "../../assets/data.json"
 import {
   BarChart,
   Bar,
@@ -10,8 +10,8 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import MySlider from "../components/MySlider";
-import "../styles/PurchaseHome.css";
+import MySlider from "../../components/MySlider";
+
 
 const getIntroOfPage = (label) => {
   if (label === "Apr") {
@@ -48,7 +48,7 @@ const PurchaseHome = () => {
       <div className="overview-slider text-center">
         <MySlider
           data={data.purchaseMetrics}
-          slidesToShow={5}
+          slidesToShow={6}
           slidesToScroll={4}
           nextArrowColor="pink"
           prevArrowColor="pink"
@@ -64,7 +64,7 @@ const PurchaseHome = () => {
       </div>
       <div
         className="charts pt-5"
-        style={{ padding: "0 1px", position: "relative" }}
+        style={{ padding: "0 2px", position: "relative" }}
       >
         <MySlider
           data={[
@@ -110,7 +110,7 @@ const PurchaseHome = () => {
                             y={y - 5}
                             fill="#000"
                             textAnchor="middle"
-                            fontSize={12}
+                            fontSize={13}
                             fontWeight="light"
                           >
                             {value}

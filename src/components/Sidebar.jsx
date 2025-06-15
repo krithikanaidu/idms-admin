@@ -127,7 +127,7 @@ export default function Sidebar() {
   const location = useLocation();
 
   return (
-    <nav className="h-[calc(0vh-64px)] mt-[55px] w-60 bg-white border-r flex flex-col">
+    <nav className="h-[calc(200vh-75px)] mt-[58px] w-50 bg-white flex flex-col">
       <ul className="sidebar-list">
         {navItems.map((item) => {
           const isActive = location.pathname === item.path;

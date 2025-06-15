@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-
+import AppRoutes from "../src/routes/AppRoutes"
 import FlashScreen from "./screens/FlashScreen";
 import LoginScreen from "./screens/LoginScreen";
-import MainLayout from "./screens/MainLayout";
 import "./styles/App.css";
 
 const App = () => {
@@ -22,7 +21,7 @@ const App = () => {
       ) : !isLoggedIn ? (
         <LoginScreen onLogin={() => setIsLoggedIn(true)} />
       ) : (
-        <MainLayout setIsLoggedIn={setIsLoggedIn} />
+        <AppRoutes setIsLoggedIn={setIsLoggedIn} />
       )}
     </Router>
   );

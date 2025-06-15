@@ -17,13 +17,15 @@ body {
   flex-direction: column;
   flex: 1;
   overflow: hidden;
-  width: auto;
+  width: fit-content;
 }
 
 .content {
   flex: 1;
   overflow-y: auto;
-  padding: 24px 40px;
+  overflow-x: hidden;
+  padding: 2px 1px;
   background-color: #f9f9f9;
 }
+
 

@@ -22,7 +22,7 @@ const LoginScreen = ({ onLogin }) => {
       setTimeout(() => {
         setLoading(false);
         onLogin(); // Optional: only if needed by parent
-        navigate("/sales"); // Navigate after delay
+        navigate("/"); // Navigate after delay
       }, 1500);
     } else {
       setError("Invalid username or password");
