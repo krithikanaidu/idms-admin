@@ -1,0 +1,48 @@
+.masterCards {
+  /* overall width & centering */
+  width: 100%;
+  max-width: 950px;          /* adjust to taste */
+  margin: 0 auto;
+
+  /* spacing around the whole slider block */
+  padding-top: 1px;             /* 40 px default */
+}
+
+
+/* Scope everything under .masterCards */
+.masterCards .slick-slide > div {
+  height: 100%;
+  padding: 25px; /* gap between each card */
+  box-sizing: border-box;
+}
+
+/* Cancel the padding at the edges so grid stays aligned */
+.masterCards .slick-list {
+  margin: 0 -35px;
+}
+
+/* Card styles (optional but helpful) */
+.masterCards .slider-card {
+  background: #f9fafb;
+  border-radius: 0.5rem;
+  padding: 5px;
+  max-width: 190px;
+  height: 120px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  word-wrap: break-word;
+  color: black;
+}
+
+/* Clamp to 2 lines to keep consistent height */
+.masterCards .card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  max-height: 100%;
+  line-height: 1.25rem;
+}

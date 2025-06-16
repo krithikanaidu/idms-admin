@@ -1,9 +1,24 @@
-import React from 'react'
+import React from "react";
+import MySlider from "../../components/MySlider";
+import "../../styles/MasterCards.css"
+import data from "../../assets/data.json";
+
 
 const SalesMaster = () => {
   return (
-    <div>SalesMaster</div>
-  )
-}
+    <div style={{ padding: "10px" }}>
+      <div className="masterCards cursor-pointer">
+        <MySlider
+          data={data.salesMasters}
+          rows={4}
+          cols={3}
+          slidesToScroll={false}
+          arrows={false}
+          wrapSlides={true} 
+        />
+      </div>
+    </div>
+  );
+};
 
-export default SalesMaster
+export default SalesMaster;

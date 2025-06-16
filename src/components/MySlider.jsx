@@ -39,13 +39,18 @@ export default function MySlider({
   slidesToScroll,
   arrows = true,
   isChart = false,
+  wrapSlides = false,
+  rows = 1,
+  cols = 1,
 }) {
   const settings = {
     dots: false,
     speed: 500,
+    rows,
+    slidesPerRow: cols,
     slidesToShow,
     slidesToScroll: Math.min(slidesToScroll || 1, data.length),
-    infinite: data.length > slidesToShow,
+    infinite: wrapSlides && data.length > slidesToShow,
     nextArrow: arrows ? <SampleNextArrow /> : null,
     prevArrow: arrows ? <SamplePrevArrow /> : null,
     responsive: [

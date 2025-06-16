@@ -3,7 +3,7 @@
   "noteSales": [{ "title": "Note: D – Domestic" }],
   "monthlyPerformance": [
     { "id": 1, "month": "Apr", "value": 2 },
-    { "id": 2, "month": "May", "value": null},
+    { "id": 2, "month": "May", "value": null },
     { "id": 3, "month": "Jun", "value": 2 },
     { "id": 4, "month": "Jul", "value": 4 },
     { "id": 5, "month": "Aug", "value": 3 },
@@ -105,16 +105,14 @@
   "domesticCustomersOrders": [
     { "id": 1, "title": "Simta Clear Coats Pvt Ltd", "value": 0.37 },
     { "id": 2, "title": "ABG Engineering", "value": 0.35 },
-    { "id": 3, "title": "Kassa Doors And Buildpro Pvt Ltd", "value": 0.30 },
+    { "id": 3, "title": "Kassa Doors And Buildpro Pvt Ltd", "value": 0.3 },
     { "id": 4, "title": "Weatherseal Fenestration Pvt Ltd", "value": 0.14 },
     { "id": 5, "title": "Hindalco Industries Limited (SAPA)", "value": 0.14 }
   ],
 
-  "domesticOrderedSKU": [
-    {"id" : 1, "title": "TR/40", "value": 0.42}
-  ],
+  "domesticOrderedSKU": [{ "id": 1, "title": "TR/40", "value": 0.42 }],
 
-    "hrmMetrics": [
+  "hrmMetrics": [
     { "id": 1, "title": "Active Employees", "value": 31 },
     { "id": 2, "title": "Male Employees", "value": 23 },
     { "id": 3, "title": "Female Employees", "value": 8 },
@@ -123,11 +121,122 @@
     { "id": 6, "title": "Total Paid Salary", "value": "0.0" }
   ],
 
-    "monthlyEmployeesNetPaidSalary": [
-  
+  "monthlyEmployeesNetPaidSalary": [],
+
+  "monthlyEmployeeLeaves": [],
+
+  "salesMasters": [
+    { "id": 1, "title": "GST/S" },
+    { "id": 2, "title": "B2B Customer" },
+    { "id": 3, "title": "SKU" },
+    { "id": 4, "title": "Payment Terms" },
+    { "id": 5, "title": "Logistics" }
   ],
 
-    "monthlyEmployeeLeaves": [
+  "salesTransactions": [
+    { "id": 1, "title": "Sales Forecast" },
+    { "id": 2, "title": "Sales order" },
+    { "id": 3, "title": "DRN for SKU" },
+    { "id": 4, "title": "Shipment Planning" },
+    { "id": 5, "title": "Proforma Invoice" },
+    { "id": 6, "title": "Sevice Invoice" },
+    { "id": 7, "title": "Generate E-Invoice" },
+    { "id": 8, "title": "Generate E-Way Bill" },
+    { "id": 9, "title": "Credit Note" },
+    { "id": 10, "title": "Cancel DRN" },
+    { "id": 11, "title": "Debit Note" },
+    { "id": 12, "title": "Service E-Invoice" }
+  ],
 
+  "salesReports": [
+    { "id": 1, "title": "Quotation Of SKU" },
+    { "id": 2, "title": "Sales Forecast" },
+    { "id": 3, "title": "Sales Order" },
+    { "id": 4, "title": "Sales ORder Confirmation" },
+    { "id": 5, "title": "Back ORder Report SO" },
+    { "id": 6, "title": "Back ORder Report SKU" },
+    { "id": 7, "title": "Sales Order Status" },
+    { "id": 8, "title": "Sales Register" },
+    { "id": 9, "title": "Sales Register With Line Details" },
+    { "id": 10, "title": "Proforma Invoice" },
+    { "id": 11, "title": "Service Invoice" },
+    { "id": 12, "title": "Finished Goods(FG)" },
+    { "id": 13, "title": "Credit Note" },
+    { "id": 14, "title": "Delivery Note" },
+    { "id": 15, "title": "Delivery Challan (Ship to JWP)" },
+    { "id": 16, "title": "JWP Sales Register Report" },
+    { "id": 17, "title": "Debit Note" },
+    { "id": 18, "title": "SPV" },
+    { "id": 19, "title": "Cancelled JWP Sales Invoice" },
+    { "id": 20, "title": "Sales Cancelled Inovices" }
+  ],
+
+  "purchaseMasters": [
+    { "id": 1, "title": "GST/P" },
+    { "id": 2, "title": "Prospect Supplier" },
+    { "id": 3, "title": "Supplier" },
+    { "id": 4, "title": "Item" },
+    { "id": 5, "title": "Payment Terms" },
+    { "id": 6, "title": "Logistics" },
+    { "id": 7, "title": "Asset Master(Capitaised)" },
+    { "id": 8, "title": "Inventory Store Link" },
+    { "id": 9, "title": "New Item Master" }
+  ],
+
+  "purchaseTransaction": [
+    { "id": 1, "title": "Generate PO" },
+    { "id": 2, "title": "Generate Supplementary PO" },
+    { "id": 3, "title": "Cancel PO" },
+    { "id": 4, "title": "Short PO Closing" },
+    { "id": 5, "title": "Amend PO" },
+    { "id": 6, "title": "Debit Note" },
+    { "id": 7, "title": "PR to PO" }
+  ],
+
+  "purchaseReports": [
+    { "id": 1, "title": "Item Master Summary" },
+    { "id": 2, "title": "Sales Forecast" },
+    { "id": 3, "title": "Prospect Supplier Report" },
+    { "id": 4, "title": "Purchase Order" },
+    { "id": 5, "title": "Outstanding PO Report" },
+    { "id": 6, "title": "Service Purchase Order" },
+    { "id": 7, "title": "Inventory Report" },
+    { "id": 8, "title": "PPV" },
+    { "id": 9, "title": "Debit Note" }
+  ],
+
+  "hrmMasters": [
+    { "id": 1, "title": "Employee Master" },
+    { "id": 2, "title": "Employee Profile" },
+    { "id": 3, "title": "New Paid Holidays" },
+    { "id": 4, "title": "Leave Master" },
+    { "id": 5, "title": "Leave Setup" },
+    { "id": 6, "title": "Payroll Components" },
+    { "id": 7, "title": "Paid Leaves [PL/CompOff/AL]" },
+    { "id": 8, "title": "Statutory Contribution" },
+    { "id": 9, "title": "Salary Master Management Staff" },
+    { "id": 10, "title": "Paid Holidays" },
+    { "id": 11, "title": "Salary Components" },
+    { "id": 12, "title": "Payroll Components Setup" }
+  ],
+
+  "hrmTransactions": [
+    { "id": 1, "title": "Leave Application" },
+    { "id": 2, "title": "Leave Adjustments" },
+    { "id": 3, "title": "Cancel Leave" },
+    { "id": 4, "title": "Outdoor Duty Application" },
+    { "id": 5, "title": "Salary Advance Summary" },
+    { "id": 6, "title": "iBAS Upload Attendance" },
+    { "id": 7, "title": "Attendance Review" },
+    { "id": 8, "title": "Payroll Management Staff" }
+  ],
+
+  "hrmReports": [
+    { "id": 1, "title": "Leave Application" },
+    { "id": 2, "title": "Outdoor Duty Application" },
+    { "id": 3, "title": "Employee Attendance" },
+    { "id": 4, "title": "Payroll" },
+    { "id": 5, "title": "Employee Grade Structure" },
+    { "id": 6, "title": "Employee Exit" }
   ]
 }

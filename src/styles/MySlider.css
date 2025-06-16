@@ -15,6 +15,7 @@
   padding: 0 8px;
 }
 
+
 .slider-card {
   background: #ffffff;
   border-radius: 8px;
@@ -44,7 +45,6 @@
 }
 
 .card-title {
-  color: #007DAF;
   font-size: 15px;
   margin-bottom: 0.3rem;
   margin-left: 1px;
@@ -55,7 +55,7 @@
 
 .card-content {
   color: #007DAF;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: lighter;
   /* word-wrap: break-word;
   white-space: normal;
@@ -76,7 +76,7 @@
 /* Arrow Styles */
 .chart-container {
   padding: 2px;
-  margin-right: 5px;
+  margin-right: 4px;
   padding-bottom: 10px;
 }
 

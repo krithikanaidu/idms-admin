@@ -11,12 +11,7 @@ import {
 } from "recharts";
 import data from "../../assets/data.json";
 
-const getIntroOfPage = (label) => {
-  if (label === "Apr") {
-    return "";
-  }
-  return "";
-};
+
 
 const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
