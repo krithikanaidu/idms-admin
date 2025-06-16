@@ -26,7 +26,7 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  border-bottom: 4px solid #007DAF;
+  border-bottom: 5px solid #007DAF;
   height: auto;
   width: auto;
 }
