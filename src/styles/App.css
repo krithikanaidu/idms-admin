@@ -29,3 +29,21 @@ body {
 }
 
 
+/* Responsive styles */
+@media (max-width: 900px) {
+  .app-wrapper {
+    flex-direction: column;
+  }
+  .right-panel {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 8px 2px;
+  }
+  .app-wrapper {
+    height: auto;
+  }
+}

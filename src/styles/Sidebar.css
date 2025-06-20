@@ -122,3 +122,47 @@
     width: 100%;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 60px;
+        padding: 12px 0;
+        align-items: flex-start;
+    }
+
+    .sidebar-logo img {
+        width: 32px;
+        margin-bottom: 8px;
+    }
+
+    .sidebar-label {
+        display: none;
+    }
+
+    .sidebar-link {
+        padding: 8px 8px;
+        gap: 0;
+        justify-content: center;
+    }
+
+    .sidebar-powered {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 48px;
+        padding: 8px 0;
+    }
+
+    .sidebar-logo img {
+        width: 24px;
+    }
+
+    .sidebar-powered {
+        font-size: 10px;
+        padding: 4px 4px;
+    }
+}

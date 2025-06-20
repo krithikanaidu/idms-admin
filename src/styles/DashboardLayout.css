@@ -12,3 +12,12 @@
   padding: 20px;
   background: #fff;
 }
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    padding: 10px;
+  }
+  .dashboard-module-wrapper {
+    min-width: 0;
+  }
+}
